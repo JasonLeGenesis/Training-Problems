@@ -1,0 +1,19 @@
+{
+  "name": "training-problems",
+  "version": "1.0.0",
+  "description": "const bip39 = require('../') const Buffer = require('safe-buffer').Buffer const proxyquire = require('proxyquire') const test = require('tape')",
+  "main": "readme.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bip32": "^3.0.1",
+    "bip39": "^3.0.4",
+    "bitcoinjs-lib": "^6.0.2",
+    "JSON": "^1.0.0",
+    "tiny-secp256k1": "^2.2.1"
+  }
+}
