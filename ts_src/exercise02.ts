@@ -52,10 +52,11 @@ console.log(address);
 console.log("\n\n\n")
 //Result: Success! You have been sent 0.00064513 tBTC!
 
-var PastTrans = await axios.get('https://blockstream.info/testnet/api/address/msXMiXJVSBC49mTmYmCMuRLN7NYTU61Kcw/utxo')
+var PastTrans = await axios.get(`https://blockstream.info/testnet/api/address/${address}/utxo`)
+PastTrans = PastTrans.data[0]
 var raw = await axios.get(`https://blockstream.info/testnet/api/tx/${PastTrans.txid}/hex`)
 console.log(raw.data)
-PastTrans = PastTrans.data[0]
+
 
 //Get raw transaction
 console.log("\n\n\n")
@@ -89,14 +90,14 @@ console.log(trans)
  
 //Broadcasting the transaction 
 //var trans = psbt.extractTransaction().toHex()
-
+/** 
 try {
     var upload = await axios.post('https://blockstream.info/testnet/api/tx',{trans},{});
     console.log(upload)
 } catch(err) {
   console.log(err)
 }
-
+*/
 
 }
 main()
