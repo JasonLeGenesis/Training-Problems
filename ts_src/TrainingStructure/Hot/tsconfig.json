@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "./src",
+    "declaration": true,
+    "rootDir": "./ts_src",
+    "allowJs": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "watchOptions": {
+    "watchFile": "usefsevents",
+    "watchDirectory": "usefsevents",
+  },
+  "include": [
+    "ts_src/**/*.ts",
+  ],
+  "exclude": [
+    "**/*.spec.ts",
+    "node_modules/**/*"
+  ]
+}
